@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 #preloader {
   position: absolute;
   top: 0;
@@ -170,7 +171,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
   cursor: url("/asset/img/cursor.png"), auto;
 }
@@ -862,7 +863,7 @@ h1{
   vertical-align: middle;
   font-size: 26px;
   color: rgba(255,255,255,0.8);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 h1 span{
