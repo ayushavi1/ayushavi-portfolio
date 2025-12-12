@@ -1,351 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="asset/css/main.css" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Portfolio To your site" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="Ayush Datta Jaiswal" />
-    <script
-      src="https://kit.fontawesome.com/4019246ab4.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="asset/img/ayushdj.jpg"
-      type="image/x-icon"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Ayush Datta Jaiswal - Portfolio</title>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Datta Jaiswal | Software Engineer</title>
+    <meta name="description" content="Portfolio of Ayush Datta Jaiswal - Software Engineer at Nutanix, IIT Guwahati Graduate, specializing in Full Stack Development and AI/ML.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">ADJ</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <!--Header-->
-    <div id="header">
-      <div id="small-screen-nav">
-        <div id="close"></div>
-        <ul id="small-ul">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li></li>
-        </ul>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-animation"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Ayush Datta Jaiswal</h1>
+                <h2 class="hero-title">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Software Engineer at <span class="highlight">Nutanix</span> | IIT Guwahati Graduate<br>
+                    Building intelligent systems with AI/ML and modern web technologies
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/your-resume-id/view" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/ayushavi1" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayushdattajaiswal/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ayushdattajaiswal@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-glow"></div>
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
 
-      <div id="container">
-        <ul id="full-ul">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li></li>
-        </ul>
-        <div id="nav-icon"></div>
-      </div>
-    </div>
-    <div class="landing" id="home">
-      <div class="img"><img src="asset/img/code.gif" alt="" /></div>
-      <div class="container">
-        <div class="h1" data-aos="zoom-in-up" data-aos-duration="3000">
-          <h1>
-            <a> Ayush Datta Jaiswal <b>|</b></a>
-          </h1>
-          <div id="typed-strings">
-            <p>Programmer 🖥</p>
-            <p>Web Developer 💻</p>
-            <p>Engineer 🔥</p>
-          </div>
-          <span id="typed"></span>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a <span class="highlight">Software Engineer</span> at Nutanix, where I work on building 
+                        intelligent systems that enhance customer experience. With a strong foundation in 
+                        <span class="highlight">Full Stack Development</span> and growing expertise in 
+                        <span class="highlight">AI/ML</span>, I love solving complex problems with elegant solutions.
+                    </p>
+                    <p>
+                        I graduated from <span class="highlight">IIT Guwahati</span> with a B.Tech in Electronics 
+                        and Communication Engineering (Minor in Computer Science) with a CGPA of 8.68. During my 
+                        time there, I led development of impactful products as part of the Students' Web Committee.
+                    </p>
+                    <p>
+                        Currently, I'm focused on building AI-powered solutions including the 
+                        <span class="highlight">Support Intelligent Front Door</span> using LLMs and 
+                        <span class="highlight">MCP (Model Context Protocol)</span>, and leading major feature 
+                        revamps on the Nutanix Support Portal.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">1.5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Tickets Delivered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Hackathon Wins</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">8.68</span>
+                        <span class="stat-label">CGPA @ IITG</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="about" id="about">
-      <svg
-        width="100%"
-        height="100%"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs></defs>
-        <path id="landingsvg" d="" />
-      </svg>
-      <div class="container container1">
-        <div class="card card1" data-aos="zoom-in-up" data-aos-duration="1000">
-          <div class="title">About Me</div>
-          <!--Add ur Image here make sure it is a square Image eg: 300x300px-->
-          <div class="img">
-            <img
-              src="asset/img/ayushdj.jpg"
-              alt="myimage"
-            />
-          </div>
-          <p>
-            Hi there! I am Ayush Datta Jaiswal from Lucknow, 🇮🇳<br />
-            I am currently pursuing Bachelor of Engineering in Electronics and
-            Communication Engineering.<br />
-            I am an information seeker who is always eager to learn something
-            new. <br />I 💙 to develop Websites.
-          </p>
-          <a class="resume" href="https://drive.google.com/file/d/1u-oCyaJn9gkPQNI_bALEf-0_lPGpgKLv/view?usp=sharing">Resume</a>
-        </div>
-      </div>
-      <div class="container container2">
-        <div class="card card2" data-aos="zoom-in-up" data-aos-duration="1000">
-          <span><b>Skills</b></span> <br />
-          <span> Programming</span>
-          <ul class="mainlist">
-            <!--U can use Fontawsome icons here-->
-            <!--I have usedicon from https://icons8.com if u need to add new icon and title follow the format below and make sure the size of the  icon is 48pxx from icon8 site-->
-            <ul class="sublist">
-              <li class="icon">
-                <img
-                  src="https://img.icons8.com/color/48/000000/c-programming.png"
-                />
-              </li>
-              <li>C</li>
-            </ul>
-            <ul class="sublist">
-              <li class="icon">
-                <img
-                  src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
-                />
-              </li>
-              <li>C++</li>
-            </ul>
+    </section>
 
-            <ul class="sublist">
-              <li class="icon">
-                <img src="https://img.icons8.com/dusk/48/000000/python.png" />
-              </li>
-              <li>Python</li>
-            </ul>
-          </ul>
-          <ul style="width: 10%; line-height: 20px" class="sublist">
-            <li class="icon">
-              <img style="width:100%"
-              src=https://img.icons8.com/color/344/javascript--v1.png" />
-            </li>
-            <li>JavaScript</li>
-          </ul>
-          <span>Tools</span>
-          <ul class="mainlist">
-            <ul class="sublist">
-              <li class="icon">
-                <img
-                  src="https://img.icons8.com/color/48/000000/git.png"
-                  alt="git"
-                />
-              </li>
-              <li>Git</li>
-            </ul>
-            <ul class="sublist">
-              <li class="icon">
-                <img
-                  src="https://img.icons8.com/color/48/000000/github.png"
-                  alt="github"
-                />
-              </li>
-              <li>Github</li>
-            </ul>
-            <ul class="sublist">
-              <li class="icon">
-                <img
-                  src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"
-                  alt="vscode"
-                />
-              </li>
-              <li>VS Code</li>
-            </ul>
-          </ul>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Member of Technical Staff - 1</h3>
+                                <p class="timeline-company">Nutanix Technologies India Pvt. Ltd.</p>
+                            </div>
+                            <span class="timeline-date">July 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Led end-to-end <strong>Compatibility Matrix Revamp</strong> for Nutanix Support Portal using React.js and Sails.js, redesigning UI architecture with improved navigation and accessibility compliance</li>
+                            <li>Architected the <strong>Support Intelligent Front Door</strong> using MCP (Model Context Protocol) server integrated with Gemma 3 LLM, enabling natural language interactions for asset management</li>
+                            <li>Drove <strong>IRM infrastructure upgrades</strong> including MongoDB driver migration, validating 10+ critical workflows with zero downtime</li>
+                            <li>Championed <strong>UI unit testing adoption</strong>—set up Jenkins coverage jobs, conducted brownbag sessions, authored test cases for 15+ components</li>
+                            <li>Built <strong>Licensing Case Deflection workflow</strong> end-to-end—developed AI-based Intent Detection API in SupportGPT and integrated with Portal</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Sails.js</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">MCP</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Intern, Member of Technical Staff</h3>
+                                <p class="timeline-company">Nutanix Technologies India Pvt. Ltd.</p>
+                            </div>
+                            <span class="timeline-date">May 2023 - July 2023</span>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed and developed a user-centric <strong>Feedback Service Dashboard</strong> using React.js and PrismUI with Sails.js APIs</li>
+                            <li>Configured <strong>SQL Versioning</strong> for the database using Liquibase to track changes</li>
+                            <li>Optimized pages by incorporating <strong>Lazy Loading</strong>, fixing bugs and adding Unit Test Cases</li>
+                            <li>Created user-specific guides on the Support Portal with distinct UIs for various user scenarios</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">PrismUI</span>
+                            <span class="tag">Liquibase</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container container3">
-        <div class="card card3" data-aos="zoom-in-up" data-aos-duration="1000">
-          <h4><b>Social</b></h4>
-          <ul>
-            <!--Enter your social media links here-->
-            <li>
-              <a href="https://github.com/ayushavi1"
-                ><i class="fab fa-github gt1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ayushdattajaiswal/"
-                ><i class="fab fa-linkedin-in ln1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="mail:ayushavi.123@gmail.com"
-                ><i class="fas fa-at el1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Ayush5678"
-                ><i class="fab fa-twitter twtr1"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="projects" id="project">
-      <svg
-        class="proj"
-        width="100%"
-        height="100%"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs></defs>
-        <path id="projectsvg" d="" />
-      </svg>
-      <span>Projects <i class="fas fa-project-diagram"></i></span>
-      <div class="project-card" data-aos="zoom-in-up" data-aos-duration="2000">
-        <!--Use the sample template below for other projects of urs-->
-        <img src="asset/img/photoShare.png" alt="" />
-        <div class="title">Photo Sharing Portal</div>
-        <div class="dec">
-          <p>
-            Developed a website using React.js for sharing photos with Google
-            Maps and Geocoding API integration to get the location of the Photo
-            on a map. Used Node.js and Express.js for Backend and REST API to
-            get information from Backend to Frontend and MongoDB Atlas for
-            database
-          </p>
-          <br />
-          <a href="https://github.com/ayushavi1/photo-share-application"
-            >Github Repo</a
-          >
-        </div>
-      </div>
-      <div
-        id="project"
-        class="project-card"
-        data-aos="zoom-in-up"
-        data-aos-duration="1500"
-      >
-        <img src="asset/img/Unimeet.png" alt="" />
-        <div class="title">Video Conferencing App - Unimeet</div>
-        <div class="dec">
-          <p>
-            Developed a web application for real time video conferencing using
-            Node.js, and Express.js with communication using WebRTC, Socket.io
-            and Peer.js allowing multiple users to join/create a room and share
-            data. Frontend on eJS and BootStrap, User Auth using Google OAuth
-            and Data of all active rooms stored in MongoDB Atlas.
-          </p>
-          <br />
-          <a href="https://github.com/ayushavi1/video-chat">Github Repo</a>
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in-up" data-aos-duration="1500">
-        <img src="asset/img/encode.png" alt="" />
-        <div class="title">Digitalized Urban Transportation</div>
-        <div class="dec">
-          <p>
-            Developed a website on React.js and a mobile application on Flutter
-            with backend on Django where bus drivers can register and their
-            driving license is verified during registration. Passengers can
-            search for a bus, see its location, book tickets and verify tickets.
-          </p>
-          <br />
-          <a href="https://ps2st.github.io/Encode-Links/">Github Repo</a>
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in-up" data-aos-duration="1500">
-        <img src="asset/img/auctioneer.jpeg" alt="" />
-        <div class="title">Auctioneer App</div>
-        <div class="dec">
-          <p>
-            Developed an app uisng Flutter where we can conduct auctions with
-            Auction History feature. Used Firebase for Authentication and
-            Database Management and Imgur API for uploading images for the
-            auction item.
-          </p>
-          <br />
-          <a href="https://github.com/Dhruvpshahh/auctioneer-app"
-            >Github Repo</a
-          >
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <footer>
-      <div class="footer">
-        Site By <a>Ayush Datta Jaiswal 🔥</a><br /><br />
-        <div class="rounded-social-buttons">
-          <a
-            class="social-button facebook"
-            href="https://www.facebook.com/ayushavi.567/"
-            target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            class="social-button twitter"
-            href="https://twitter.com/Ayush5678"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            class="social-button linkedin"
-            href="https://www.linkedin.com/in/ayushdattajaiswal/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            class="social-button youtube"
-            href="https://www.youtube.com/channel/UCMgExDY_wcAxODOsWLOY_-w"
-            target="_blank"
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a
-            class="social-button instagram"
-            href="https://www.instagram.com/ayushavi1/"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://iitg.ac.in/placements/auth" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://youtu.be/mcYf1eeTGT0" target="_blank" class="project-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Placement Portal</h3>
+                        <p class="project-subtitle">Student's Web Committee, IIT Guwahati</p>
+                        <p class="project-description">
+                            Led development of IIT Guwahati's official recruitment portal supporting 1500+ students 
+                            and 200+ companies. Built frontend/backend features for job applications, candidate tracking, 
+                            and automated notifications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://swc.iitg.ac.in/election_portal/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Election Portal</h3>
+                        <p class="project-subtitle">Student's Web Committee, IIT Guwahati</p>
+                        <p class="project-description">
+                            Developed a secure end-to-end platform for Student Body Elections, facilitating 6000+ students 
+                            with client-side vote encryption and admin-controlled decryption keys.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Encryption</span>
+                            <span class="tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushavi1/DL_Project_Team_Mavericks" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Loop Closure Detection for Visual SLAM</h3>
+                        <p class="project-subtitle">Deep Learning Course Project</p>
+                        <p class="project-description">
+                            Built a deep learning-based system using EfficientNet encoders and triplet-loss contrastive 
+                            training, achieving improved feature retrieval accuracy for Visual SLAM.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushavi1/video-chat" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Video Conferencing App</h3>
+                        <p class="project-subtitle">Coding Club IITG</p>
+                        <p class="project-description">
+                            Real-time video conferencing using WebRTC, Socket.IO, and PeerJS with Google OAuth 
+                            authentication and MongoDB for active room data.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Socket.IO</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushavi1/Options-Pricing" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Options Pricing</h3>
+                        <p class="project-subtitle">Quantitative Finance</p>
+                        <p class="project-description">
+                            Python program pricing European Call and Put Options using Monte Carlo Simulation, 
+                            verified against Black-Scholes Model predictions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Monte Carlo</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card research">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1rzt_Vv7wFubf4ZMlA8pUiVncefPRuHga/view" target="_blank" class="project-link">
+                                    <i class="fas fa-file-pdf"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">Research</span>
+                        <h3 class="project-title">Visibility Enhancement in Adverse Driving</h3>
+                        <p class="project-subtitle">Bachelor's Thesis | Prof. Anirban Dasgupta</p>
+                        <p class="project-description">
+                            Deep Learning model for driver awareness in adverse weather conditions using CNN-based 
+                            weather classification with ResNet and attention mechanisms.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">ResNet</span>
+                            <span class="tag">Image Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-globe"></i>
+                        Web Technologies
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-ship"></i>
+                            <span>Sails.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Flutter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-database"></i>
+                        Databases
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>LLM/AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card gold">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Nutanix Hackathon XI</h3>
+                        <p>Winner, Surprise Me Category</p>
+                        <span class="achievement-detail">DeepSight.AI - LLM-based Customer Temperature</span>
+                        <span class="achievement-year">2025</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card silver">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>SAAS Engineering Hackathon</h3>
+                        <p>Runner Up, Partner & Customer Experience</p>
+                        <span class="achievement-detail">SIFD POC</span>
+                        <span class="achievement-year">2025</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card gold">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>EnCode 2022</h3>
+                        <p>Rank 1</p>
+                        <span class="achievement-detail">Among 180+ teams in Development Hackathon</span>
+                        <span class="achievement-year">2022</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card bronze">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Kriti 2023</h3>
+                        <p>Bronze Medal</p>
+                        <span class="achievement-detail">Software Development - Inter-Hostel Tech Competition</span>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Flipkart GRiD 4.0</h3>
+                        <p>Final Round</p>
+                        <span class="achievement-detail">Top performers among 1.5 Lakh participants</span>
+                        <span class="achievement-year">2022</span>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Branch Change</h3>
+                        <p>Academic Excellence</p>
+                        <span class="achievement-detail">Upgraded to ECE - Top 10%</span>
+                        <span class="achievement-year">2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently open to new opportunities and collaborations. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:ayushdattajaiswal@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>ayushdattajaiswal@gmail.com</span>
+                    </a>
+                    <a href="tel:+917011343208" class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7011343208</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayushdattajaiswal/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/ayushavi1" target="_blank" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <a href="mailto:ayushdattajaiswal@gmail.com" class="btn btn-primary btn-large">
+                    Say Hello <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <span class="highlight">Ayush Datta Jaiswal</span></p>
+            <p class="footer-year">© 2024</p>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.js"
-      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
-      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="asset/js/wavify.js"></script>
-    <script src="asset/js/jquery.wavify.js"></script>
-    <script src="asset/js/index.js"></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
